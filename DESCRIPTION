@@ -1,0 +1,12 @@
+Package: RU
+Type: Package
+Title: O Que Tem No RU Hoje?
+Version: 0.1.0
+Authors@R: person("Gustavo", "Carvalho", email = "gustavo.bio@gmail.com", role = c("aut", "cre"))
+Description: Menu semanal do RU da Unesp Rio Claro.
+Depends:
+    rvest,
+    xml2
+License: GPL
+LazyData: TRUE
+RoxygenNote: 5.0.1
