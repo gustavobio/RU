@@ -14,7 +14,7 @@ cardapio <- function() {
     nodes <- rvest::html_nodes(page_source, ".txt_corpo")
     res <- rvest::html_table(nodes)[[1]]
     cat(tolower(res[1, 1]), ":\n", sep = "")
-    names(res) <- res[2, ]
+    names(res) <- gsub("-", "_", res[2, ])
     res <- res[-(1:2),]
     data.frame(lapply(res, tolower))
 }
